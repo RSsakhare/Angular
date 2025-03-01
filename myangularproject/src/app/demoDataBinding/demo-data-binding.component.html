@@ -1,0 +1,23 @@
+<p>demo-data-binding works!</p>
+<p>One-way data binding in Angular</p>
+Logo: <img [src]="website.logo"/>
+Logo: <img bind-src="website.logo"/>
+Logo: <img src="{{website.logo}}"/>
+<br><br>
+
+<p [textContent]="website.description"></p>
+<p bind-textContent="website.description"></p>
+<p textContent="{{website.description}}"></p>
+
+<br>
+<p>One-way data binding in Angular</p>
+
+<input type="text" name="somename" [value]="website.name"/><br>
+<input type="text" name="somename" bind-value="website.name"/><br>
+<p>Data Binding</p>
+<h3>NgModule</h3>
+<input type="text" name="somename" [ngModel]="website.name"/>
+
+<p>two-way data binding in Angular-Using ngModel</p>
+<input type="text" name="somename" [(ngModel)]="tech"/>
+<p>{{tech}}</p>

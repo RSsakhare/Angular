@@ -1,0 +1,36 @@
+<p>httpcomp works!</p>
+
+<table border="1">
+  <tr>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Content</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let i of posts">
+    <td>{{i.id}}</td>
+    <td>{{i.title}}</td>
+    <td>{{i.body}}</td>
+    <td>
+      <button type="button" (click)="deletePost(i.id)">Delete</button>
+      <button type="button" (click)="edit(i)">Edit</button>
+    </td>
+  </tr>
+</table>
+
+<!-- Edit form for updating a post -->
+<div *ngIf="editPost">
+  <h2>Edit Post</h2>
+  <form (ngSubmit)="update()">
+    <label for="editId">ID:</label>
+    <input type="number" id="editId" [(ngModel)]="editPost.id" name="editId" readonly>
+
+    <label for="editTitle">Title:</label>
+    <input type="text" id="editTitle" [(ngModel)]="editPost.title" name="editTitle" required>
+
+    <label for="editBody">Content:</label>
+    <textarea id="editBody" [(ngModel)]="editPost.body" name="editBody" rows="4" required></textarea>
+
+    <button type="submit">Update Post</button>
+  </form>
+</div>

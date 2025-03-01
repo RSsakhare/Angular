@@ -1,0 +1,22 @@
+<p>attribute-demo-component works!</p>
+<!-- this property syntax for style --> 
+<h2>Attribute Directives</h2> 
+<!-- this property syntax for style inline style --> 
+<p>HTML way ofapplying inline styles</p> 
+<div style="color:blue"> <p>This is div</p></div> 
+   
+<p>in Angular way using style property binding syntax</p>   
+<p [style.color]="'orange'"> style using property syntax this text is orange</p> 
+   
+<p>Using ngStyle attribute directive </p> 
+<p [ngStyle]=" {'color': color, 'font-size': size, 'font-weight': 'bold'} "> 
+    style using ngStyle 
+</p>
+<!--Using ngClass --> 
+<h4>HTML way of applying CSS class</h4> 
+<p class="blue">This is Blue paragraph</p> 
+<!-- this property syntax for ng-class --> 
+<p [ngClass]="['bold-text', 'green']"> 
+    array of classes(using ngclass) </p> 
+   
+  <p [ngClass]="'italic-text blue'">string of classes (using ngclass again)</p>

@@ -1,0 +1,45 @@
+.employee-details-container {
+    font-family: Arial, sans-serif;
+   
+    margin: 20px auto;
+    background-color: rgba(122, 194, 242, 0.481);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .content {
+    border: 1px solid #ddd;  /* Keep the border for the content area */
+    padding: 15px;
+    background-color: white;
+  }
+  
+  fieldset {
+    border: 1px solid #1a1818; /* Border for the fieldset */
+    padding: 10px;          /* Padding inside the fieldset */
+    margin-bottom: 10px;   /* Margin below the fieldset */
+  }
+  
+  
+  legend {
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 0 5px;       /* Padding around the legend text */
+    margin-left: 10px;  /* Adjust legend position */
+    color: #333;         /* Darker text color for the legend */
+    
+  }
+  
+  .details p {
+    margin-bottom: 8px;
+  }
+  
+  .details span {
+    font-weight: bold;
+    margin-right: 5px;
+  }

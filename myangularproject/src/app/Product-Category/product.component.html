@@ -1,0 +1,15 @@
+<p>product works!</p>
+<table border="1">
+    <tr>
+      <th>Id</th>
+      <th>Product Name</th>
+      <th>Quantity</th>
+      
+    </tr>
+    <tr *ngFor="let i of products">
+      <td>{{i.pid}}</td>
+      <td>{{i.pname}}</td>
+      <td>{{i.pqty}}</td>
+     
+    </tr>
+  </table>

@@ -1,0 +1,41 @@
+<p>demo-asynchronize-form works!</p>
+<div class="form-container">
+    <h2>User Form</h2>
+    <form (ngSubmit)="onSubmit(myform)" #myform="ngForm" method="post">
+        <div class="form-group">
+            <label for="fname">FirstName</label>
+            <input type="text" id="fname" name="fname" [(ngModel)]="contact.firstName" required>
+        </div>
+        <div class="form-group">
+            <label for="lname">LastName</label>
+            <input type="text" id="lname" name="lname" [(ngModel)]="contact.lastName" required>
+        </div>
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input type="text" id="age" name="age" [(ngModel)]="contact.age" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" [(ngModel)]="contact.email" required>
+        </div>
+        <div class="form-group">
+            <label for="DOB">Date of Birth</label>
+            <input type="date" id="DOB" name="Dob" [(ngModel)]="contact.dob" required>
+        </div>
+        <div class="form-group">
+            <label for="addr">Address</label>
+            <textarea id="addr" name="addr" rows="4" [(ngModel)]="contact.address" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="terms">
+                <input type="checkbox" name="terms" id="terms" [(ngModel)]="contact.terms" required>
+                I agree to the Terms and Conditions
+            </label>
+        </div>
+        <div class="form-group">
+           <button type="submit" >Submit</button>           <!-- [disabled]="!contact.terms"  is used for disable the submit button until the given condition is true-->
+        </div>
+    </form>
+</div>
+
+<p>{{myform.value | json}}</p>

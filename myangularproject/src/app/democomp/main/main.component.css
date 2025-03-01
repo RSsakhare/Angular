@@ -1,0 +1,37 @@
+/* External CSS */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.firstdiv {
+    background-color: #18e7c8;
+    padding: 20px;
+}
+
+.menudiv ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+
+.menudiv ul li {
+    display: inline;
+    padding: 0px 20px;
+    margin-right: 20px;
+}
+
+.menudiv ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menudiv ul li a:hover {
+    text-decoration: none;
+    background-color: aqua;
+}
+

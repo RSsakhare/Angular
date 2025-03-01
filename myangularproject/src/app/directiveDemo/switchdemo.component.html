@@ -1,0 +1,40 @@
+<p>switchdemo works!</p>
+<table *ngIf="players.length > 0">
+    <thead>
+        <tr>
+            <th>Player Id</th>
+            <th>Player Name</th>
+            <th>playerCountry</th>
+            <th>playerSports</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let p1 of players" [ngSwitch]="p1.playerCountry">
+        <tr *ngSwitchCase="'India'" [class]="'ind'">
+            <td>{{p1.playerId}}</td>
+            <td>{{p1.playerName}}</td>
+            <td>{{p1.playerCountry}}</td>
+            <td>{{p1.playerSports}}</td>
+        </tr>
+        <tr *ngSwitchCase="'Australia'" [class]="'aus'">
+            <td>{{p1.playerId}}</td>
+            <td>{{p1.playerName}}</td>
+            <td>{{p1.playerCountry}}</td>
+            <td>{{p1.playerSports}}</td>
+        </tr>
+        <tr *ngSwitchCase="'England'" [class]="'eng'">
+            <td>{{p1.playerId}}</td>
+            <td>{{p1.playerName}}</td>
+            <td>{{p1.playerCountry}}</td>
+            <td>{{p1.playerSports}}</td>
+        </tr>
+        <tr *ngSwitchDefault [class]="'rest'">
+            <td>{{p1.playerId}}</td>
+            <td>{{p1.playerName}}</td>
+            <td>{{p1.playerCountry}}</td>
+            <td>{{p1.playerSports}}</td>
+        </tr>
+    </tbody>
+    <br/>
+    <button (click)="removePlayer()">Remove Player</button>
+    <br/>
+</table>

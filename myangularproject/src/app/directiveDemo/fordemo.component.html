@@ -1,0 +1,39 @@
+<p>fordemo works!</p>
+<div *ngFor="let lang of langauge;let i=index">
+    <ul>
+        <li>{{i+1}}&nbsp;-&nbsp;{{lang}}</li>
+    </ul>
+</div>
+
+<table border="1"> 
+    <thead> 
+    <tr> 
+    <th>Index</th> 
+    <th>Code</th> 
+    <th>Name</th> 
+    <th>Gender</th> 
+    <th>Annual Salary</th> 
+    <th>Date of Birth</th> 
+    <th>Isfirst</th> 
+    <th>IsLast</th> 
+    <th>IsEven</th> 
+    <th>IsOdd</th> 
+    </tr> 
+    </thead>
+    <tbody>
+        <tr *ngFor="let emp of employees;let i=index;let isFirst=first;let isLast = last;
+        let isEven = even;let isOdd = odd">
+        <td>{{i}}</td>
+        <td>{{emp.code}}</td> 
+        <td>{{emp.name}}</td> 
+        <td>{{emp.gender}}</td> 
+        <td>{{emp.annualSalary}}</td> 
+        <td>{{emp.dateOfBirth}}</td> 
+        <td>{{isFirst}}</td> 
+        <td>{{isLast}}</td> 
+        <td>{{isEven}}</td> 
+        <td>{{isOdd}}</td> 
+    </tr>
+    </tbody>
+
+

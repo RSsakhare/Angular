@@ -1,0 +1,49 @@
+<h3>User Form</h3>
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="firstname">First Name</label>
+    <input type="text" id="firstname" name="firstname" formControlName="firstname" >
+  </div>
+  <div class="form-group">
+    <label for="lastname">Last Name</label>
+    <input type="text" id="lastname" name="lastname" formControlName="lastname" >
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" formControlName="email" >
+  </div>
+  <div class="form-group">
+    <label>Gender</label>
+    <div>
+      <input type="radio" id="male" name="gender" formControlName="gender" value="male">
+      <label for="male">Male</label>
+    </div>
+    <div>
+      <input type="radio" id="female" name="gender" formControlName="gender" value="female">
+      <label for="female">Female</label>
+    </div>
+    <div>
+      <input type="radio" id="other" name="gender" formControlName="gender" value="other">
+      <label for="other">Other</label>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="isMarried">Married</label>
+    <input type="checkbox" id="isMarried" name="isMarried" formControlName="isMarried">
+  </div>
+  <div class="form-group">
+    <label for="country">Country</label>
+    <select id="country" name="country" formControlName="country" >
+      <option value="">Select your country</option>
+      <option value="india">India</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+      <option value="canada">Canada</option>
+      <option value="australia">Australia</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+  <button type="submit">Submit</button>
+</form>
+
+

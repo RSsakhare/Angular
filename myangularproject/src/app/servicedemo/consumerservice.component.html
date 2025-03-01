@@ -1,0 +1,17 @@
+<p>consumerservice works!</p>
+<table border="1">
+    <tr>
+        <th>Sr.No</th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Country</th>
+        <th>Degree</th>
+    </tr>
+    <tr *ngFor="let res of result;let i=index;">
+        <td>{{i+1}}</td>
+        <td>{{res.name}}</td>
+        <td>{{res.gender}}</td>
+        <td>{{res.country}}</td>
+        <td>{{res.degree}}</td>
+    </tr>
+</table>

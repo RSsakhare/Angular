@@ -1,0 +1,21 @@
+<p>ifdemo works!</p>
+<div *ngIf="status ; else msgElseBlock">
+    <h3 class="forblue">{{message1}}</h3>
+    <p>condition is true</p>
+</div>
+<ng-template #msgElseBlock>
+    <div class="forred">
+        <h3 >{{message2}}</h3>
+        <p>condition is true</p>
+    </div>
+</ng-template>
+<br>
+<div *ngIf="flag;then thenBlock2 else elseBlock2"> 
+    <p> This is not rendered</p> 
+    </div> 
+    <ng-template #thenBlock2> 
+    <p>Now recieved the message from then Block</p> 
+    </ng-template> 
+    <ng-template #elseBlock2> 
+    <p>Now recieved the message  from elseBlock</p> 
+    </ng-template>
