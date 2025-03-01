@@ -1,9 +1,1 @@
-[submodule "mytestingapp"]
-	path = mytestingapp
-	url = D:/Angular
-[submodule "myangularproject"]
-	path = myangularproject
-	url = D:/Angular
-[submodule "AllDemos"]
-	path = AllDemos
-	url = D:/Angular
+
